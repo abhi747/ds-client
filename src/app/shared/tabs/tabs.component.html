@@ -1,0 +1,8 @@
+<ul role="tablist" aria-orientation="horizontal" class="nav nav-tabs row no-gutters mb-2">
+	<li *ngFor="let tab of tabs, let i = index" class="{{ css }}">
+		<a role="tab" [attr.aria-selected]="tab.active" [attr.aria-controls]="tab.title + 'panel'" class="nav-link fw-700 text-center" [id]="tab.title" [class.active]="tab.active" (click)="setActiveTab(i)" href="javascript:">
+			{{tab.title}}
+		</a>
+	</li>
+</ul>
+<ng-content></ng-content>

@@ -7,7 +7,7 @@ const routes: Routes = [{
 	redirectTo: 'login'
 }, {
 	path: "login",
-	loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
+	loadChildren: () => import('./modules/login-signup/login-signup.module').then(m => m.LoginModule)
 }, {
 	path: "bank-details",
 	loadChildren: () => import('./modules/bank-details/bank-details.module').then(m => m.BankDetailsModule)

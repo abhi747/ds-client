@@ -1,0 +1,44 @@
+<form (submit)="doLogin()">
+	<div class="form-group pb-3">
+		<input type="clientId" class="form-control" placeholder="Client ID">
+	</div>
+
+	<div class="form-group pb-3">
+		<input type="password" class="form-control" placeholder="Password">
+	</div>
+
+	<div class="row">
+		<div class="col-10">
+			<span class="link-note">Trouble logging in?</span>
+		</div>
+		<div class="col-2">
+			<button type="submit" class="btn btn-success float-right">Login</button>
+		</div>
+	</div>
+</form>
+
+<ng-template #pinModal let-modal>
+	<div class="modal-body">
+		<div class="text-center">
+			<img src="assets/images/avatar.svg" alt="avatar" width="28%">
+			<h5>574182</h5>
+			<div class="link-note">This isn't me</div>
+		</div>
+		<form class="mt-4">
+			<div class="form-group pb-3">
+				<input type="number" class="form-control" placeholder="Enter PIN">
+			</div>
+
+			<div class="row">
+				<div class="col-10">
+					<span class="link-note">Forgot PIN?</span>
+				</div>
+				<div class="col-2">
+					<button type="submit" class="btn btn-success float-right">
+						<img src="assets/icons/forward-arrow.svg" alt="forward" style="width:1.5rem;">
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</ng-template>

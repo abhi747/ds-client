@@ -1,0 +1,26 @@
+<nav class="nav-container">
+	<span class="pr-3">
+		<img src="assets/icons/back-arrow.svg" alt="back" width="5%">
+	</span>
+	<span class="page-heading">
+		Nav
+	</span>
+	<div>
+		<app-stages></app-stages>
+	</div>
+</nav>
+
+
+
+<ds-tabs css="separated">
+	<ds-tab [tabTitle]="'login'">
+		<div class="content-container">
+			<app-login></app-login>
+		</div>
+	</ds-tab>
+	<ds-tab [tabTitle]="'sign up'">
+		<div class="content-container">
+			<app-signup></app-signup>
+		</div>
+	</ds-tab>
+</ds-tabs>

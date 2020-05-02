@@ -1,0 +1,8 @@
+<div
+  [attr.aria-labelledby]="title"
+  role="tabpanel"
+  [hidden]="!active"
+  [id]="title + 'panel'"
+  class="pane">
+  <ng-content></ng-content>
+</div>

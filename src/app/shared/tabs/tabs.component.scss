@@ -1,0 +1,30 @@
+//@import "~variables.scss";
+$primary-color: #0051c3;
+
+.nav-tabs {
+  border-bottom: none;
+  .nav-link {
+    height: 100%;
+    border-bottom: 3px solid #dbdbdb;
+    border-radius: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    transition: all 0.4s ease;
+    color: #a2a2a2;
+    text-transform: uppercase;
+    &.active {
+      border-bottom: 3px solid $primary-color;
+      color: #000;
+    }
+  }
+  .separated {
+    width: 50%;
+    .nav-link {
+      padding: 8% 0;
+      &.active {
+        border-color: $primary-color;
+      }
+    }
+  }
+}

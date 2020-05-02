@@ -1,0 +1,5 @@
+<div class="d-flex justify-content-end">
+	<ng-container *ngFor="let stage of stages; let i = index">
+		<div class="stage" [class.completed]="i <= (completedStages - 1)"></div>
+	</ng-container>
+</div>
